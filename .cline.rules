@@ -1,0 +1,92 @@
+# Instagram Profile Scraper MCP
+
+## Primary Objective
+Scrape profile data from https://www.instagram.com/pinkinkcosmetictattoo/ while maintaining human-like behavior to avoid detection.
+
+## Success Metrics
+1. Ability to scrape profile data from pinkinkcosmetictattoo profile
+2. Store scraped data in variables for reuse with other profiles
+3. Maintain Chrome session continuity with logged-in user
+4. Implement human-like delays and navigation patterns
+
+## Technical Requirements
+
+### Profile Data Collection
+- Profile photo URL and download
+- Bio/description
+- Follower count
+- Following count
+- Post count
+- Profile metadata (name, username, etc.)
+
+### Human-like Behavior
+- Randomized delays between actions (1-5 seconds)
+- Natural mouse movement patterns
+- Randomized scroll speeds
+- Session persistence using existing Chrome profile
+
+### Data Storage
+- Save profile photos to disk
+- Store metadata in JSON format
+- Maintain data consistency with existing post data
+
+### Configuration
+- Add profile-specific settings
+- Configure save locations
+- Set scraping intervals
+
+### Error Handling
+- Handle rate limiting
+- Manage failed scrapes
+- Implement retry logic with exponential backoff
+
+### Integration
+- Work with existing Chrome session
+- Maintain consistent data format
+- Support batch processing
+- Allow profile URL parameterization
+
+## Implementation Notes
+
+### Core Modules
+1. Browser Session Manager
+   - Chrome DevTools Protocol integration
+   - Session persistence
+   - Profile management
+
+2. Scraper Engine
+   - Profile data extraction
+   - Human-like behavior simulation
+   - Error handling and retries
+
+3. Data Storage
+   - File system operations
+   - JSON serialization
+   - Data consistency checks
+
+4. Configuration Manager
+   - Environment variables
+   - Profile-specific settings
+   - Runtime configuration
+
+### Next.js Best Practices
+- Use TypeScript for type safety
+- Implement proper error boundaries
+- Utilize environment variables for configuration
+- Follow modular architecture principles
+- Implement proper logging and monitoring
+- Use dependency injection for testability
+- Implement proper caching strategies
+- Follow RESTful API conventions
+
+### Development Guidelines
+- Use ESLint and Prettier for code quality
+- Implement proper unit and integration tests
+- Use Git hooks for pre-commit checks
+- Follow semantic versioning
+- Document all public APIs
+- Maintain consistent code style
+- Use proper type definitions
+- Implement proper error handling
+- Use proper logging levels
+- Follow security best practices

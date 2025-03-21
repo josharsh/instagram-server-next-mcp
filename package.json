@@ -1,0 +1,42 @@
+{
+  "name": "instagram-server",
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "cross-env CHROME_USER_DATA_DIR=C:/Users/ryanr/ChromeUserData node build/index.js",
+    "dev": "ts-node-esm src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest",
+    "test:browser": "npx tsx test_browserService.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.2",
+    "playwright": "^1.49.1",
+    "ps-list": "^8.1.1",
+    "puppeteer": "^22.8.2",
+    "taskkill": "^5.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "chai": "^4.3.10",
+    "cross-env": "^7.0.3",
+    "debug": "^4.4.0",
+    "eslint": "^8.54.0",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.7.3"
+  },
+  "bin": {
+    "instagram-server": "./build/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
